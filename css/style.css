@@ -182,7 +182,7 @@ a:hover {color: #e69f0b;}
   padding: 10px;
   -webkit-animation: icon3d 200ms 10;
   animation: icon3d 200ms 10;
-  color: #b1b1b1;
+  color: #01a4f0;
 }
 .icon-3d:hover {
   -webkit-animation: icon3d 200ms infinite;
@@ -195,7 +195,7 @@ a:hover {color: #e69f0b;}
 }
 @keyframes icon3d {
   0% {
-    text-shadow: 5px 4px #0a29c0, -5px -6px #e50404;
+    text-shadow: 5px 4px #79e28c, -5px -6px #cee504;
   }
   25% {
     text-shadow: -5px -6px #0a29c0, 5px 4px #e50404;
