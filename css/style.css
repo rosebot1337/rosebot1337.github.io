@@ -19,10 +19,10 @@ a, button, input[type="button"], input[type="submit"], input[type="reset"]{curso
 .fl {float: left;}
 .fr {float: right;}
 /*原文件配置*/
-body {color: #FFF;background: #161616 ;font: 16px/30px 'Microsoft YaHei', arial, sans-serif;cursor: url('../images/icon_mouse.svg'), auto;}
-a {color: #000;text-decoration: none;}
+body {color: #FFF;background: #97b966 ;font: 16px/30px 'Microsoft YaHei', arial, sans-serif;cursor: url('../images/icon_mouse.svg'), auto;}
+a {color: rgb(41, 222, 5);text-decoration: none;}
 a:hover {color: #e69f0b;cursor:url('../images/icon_mouse2.svg'), auto;}
-a {color: #000;text-decoration: none;}
+a {color: rgb(179, 205, 33);text-decoration: none;}
 a:hover {color: #e69f0b;}
 /*块级转化*/
 .di_in {display: inline-block;}
@@ -36,7 +36,7 @@ a:hover {color: #e69f0b;}
 /*相对定位*/
 .p_r {position: relative;}
 /* 白色背景 */
-.bgfff {background: #fff;}
+.bgfff {background: rgba(12, 239, 133, 0);}
 .flex {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;}
 .flex-v {-webkit-box-orient: vertical;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;}
 .flex-1 {-webkit-box-flex: 1;-webkit-flex: 1;-ms-flex: 1;flex: 1;}
@@ -51,7 +51,7 @@ a:hover {color: #e69f0b;}
 .img_hover:hover{transform: scale(1.05,1.05);}
 /*全局样式 start*/
 .container{width: 100%;height: 100vh;color: #FFF;}
-.header{padding: 45px 140px;border-bottom: 1px #262626 dashed;}
+.header{padding: 45px 140px;border-bottom: 1px #445fca dashed;}
 .header .user-info .portrait{width: 45px;height: 45px;border: 2px #FFF solid;overflow: hidden;border-radius: 50%;margin-right: 15px;}
 .header .user-info .portrait img{width: 100%;}
 .header .user-info .name{text-transform: uppercase;font-size: 26px;}
@@ -59,7 +59,7 @@ a:hover {color: #e69f0b;}
 .header .link li {width: 125px;border-radius: 22px;z-index: 2;}
 .header .link li a{color: #C2C2C2;width: 100%;}
 .header .link li.cur{}
-.header .link li.cur a{color: #000;} 
+.header .link li.cur a{color: rgb(54, 182, 47);} 
 .header .link a.cur{background-color: #FFF;color: #000;}
 
 .move-bg{position: absolute;background-color: #FFF;color: #000;left: 0;width: 125px;border-radius: 22px;height: 44px;display: none;top: 0;z-index: 1;}
@@ -72,7 +72,7 @@ a:hover {color: #e69f0b;}
 .warp li .icon img{width: 54px;height: 54px;border-radius: 5px;}
 .warp li h3{margin-bottom: 0;font-weight: normal;font-size: 20px;color: #FFF;line-height: 1.5;margin-top: 10px;;}
 .warp li h3 a{color: #FFF;}
-.warp li p{margin: 0;font-size: 14px;color: #7a7a7b;}
+.warp li p{margin: 0;font-size: 14px;color: #2929ec;}
 .warp li:hover{margin-top: 10px;}
 .c1{color: #30C78C;}
 .c2{color: #ED8949;}
