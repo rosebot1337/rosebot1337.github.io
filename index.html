@@ -26,7 +26,6 @@
     </div>
     <div class="link te_c p_r hd">
 		<ul class="flex flex-align-center">
-			<li class="p_r"><a href="javascript:void(0);" class="transition OPPOSans-R di_bl">关于我</a></li>
 		</ul>
 		<div class="move-bg"></div><!--右上方 部件-->
 	</div>
@@ -294,7 +293,7 @@
 
 <!--翻页内容-->		
 <div class="warp" id="content">
-<div class="txt OPPOSans-R">兴趣使然做的一些小东西</div>
+<div class="txt OPPOSans-R">L</div>
 <ul class="flex flex-warp">
     <li class="transition">
         <div class="icon">
@@ -350,29 +349,7 @@ $(function(){
 		$('#code').attr('placeholder','请输入提取码')
 		$('#code_error').hide()
 	})
-	$('#down').click(function(){
-		var that = $(this)
-		var code = $('#code').val();
-		if(code != '123'){ //提取码
-			$('#code').attr('placeholder','').val('')
-			$('#code_error').show()
-			return false;
-		}
-		that.attr('href','http://www.baidu.com')//提取码成功跳转地址
-		that.attr('target','_blank')
-	})
-</script>
-<!-- 下载 -->
-<script>
-	const btn = document.querySelector("#btn");
-	const item = document.querySelectorAll(".lock");
-	let showCard = (event) => {
-		btn.classList.toggle("is-rotate");
-		for (var i = 0; i < item.length; i++) {
-			item[i].classList.toggle(`on`);
-		}
-	}
-	btn.addEventListener("click", showCard);
+
 </script>
 <!--音乐-->
 <script>
