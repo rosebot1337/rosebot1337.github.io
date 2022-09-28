@@ -34,14 +34,14 @@ body, html {
 .container .box .title .block {
   width: 0%;
   height: inherit;
-  background: #ffb510;
+  background: #19ead5;
   position: absolute;
   animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
   display: flex;
 }
 .container .box .title h1 {
   font-family: "Poppins";
-  color: #fff;
+  color: rgb(229, 244, 69);
   font-size: 32px;
   -webkit-animation: mainFadeIn 2s forwards;
   -o-animation: mainFadeIn 2s forwards;
@@ -79,7 +79,7 @@ body, html {
 .container .box .role .block {
   width: 0%;
   height: inherit;
-  background: #e91e63;
+  background: #a2cf26;
   position: absolute;
   animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
   animation-delay: 2s;
@@ -91,7 +91,7 @@ body, html {
   opacity: 0;
   font-weight: 400;
   font-family: "Lato";
-  color: #ffffff;
+  color: #ffa600;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 5px;
