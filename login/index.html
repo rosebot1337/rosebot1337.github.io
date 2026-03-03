@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>登录模块 - 星火社区</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>登录 / 注册</h1>
+    <p class="muted">后端：FastAPI（默认地址 `http://127.0.0.1:8000`）</p>
+
+    <label>后端地址</label>
+    <input id="apiBase" value="http://127.0.0.1:8000" />
+
+    <label>用户名</label>
+    <input id="username" maxlength="20" placeholder="至少 3 位" />
+
+    <label>密码</label>
+    <input id="password" type="password" maxlength="64" placeholder="至少 6 位" />
+
+    <div class="actions">
+      <button id="registerBtn">注册</button>
+      <button id="loginBtn">登录</button>
+    </div>
+
+    <p id="status" class="status"></p>
+
+    <section class="result">
+      <h2>当前登录态</h2>
+      <pre id="tokenView">尚未登录</pre>
+      <a href="../game/index.html">进入游戏模块 →</a>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>游戏模块 - 星火社区</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>单页面小游戏：30 秒点击挑战</h1>
+      <p class="muted">登录后提交成绩到 FastAPI 排行榜。</p>
+
+      <label>后端地址</label>
+      <input id="apiBase" value="http://127.0.0.1:8000" />
+
+      <div class="panel">
+        <div>玩家：<strong id="userName">未登录</strong></div>
+        <div>倒计时：<strong id="timeLeft">30</strong>s</div>
+        <div>当前分数：<strong id="score">0</strong></div>
+      </div>
+
+      <div class="actions">
+        <button id="startBtn">开始游戏</button>
+        <button id="tapBtn" disabled>点击得分</button>
+        <button id="submitBtn">提交成绩</button>
+      </div>
+      <p id="status" class="status"></p>
+      <a href="../login/index.html">← 返回登录模块</a>
+    </section>
+
+    <section class="card">
+      <h2>排行榜 TOP10</h2>
+      <button id="refreshBtn">刷新排行榜</button>
+      <ol id="leaderboard"></ol>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
