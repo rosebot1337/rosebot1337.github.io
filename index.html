@@ -9,6 +9,7 @@
 </head>
 <body>
   <div class="background-glow"></div>
+
   <header class="topbar">
     <div class="logo">星火社区</div>
     <nav>
@@ -20,42 +21,45 @@
   </header>
 
   <main class="layout">
-    <section class="hero card">
-      <h1>在这里分享经验、提问和结识同好</h1>
-      <p>一个更像“社区”的主页：有人发帖、有人回复、有人组织活动。</p>
-      <div class="hero-stats">
-        <div><strong id="memberCount">0</strong><span>成员</span></div>
-        <div><strong id="postCount">0</strong><span>帖子</span></div>
-        <div><strong id="todayCount">0</strong><span>今日新帖</span></div>
-      </div>
-    </section>
+    <div class="main-column">
+      <section class="hero card">
+        <h1>在这里分享经验、提问和结识同好</h1>
+        <p>一个更像“社区”的主页：有人发帖、有人回复、有人组织活动。</p>
+        <div class="hero-stats">
+          <div><strong id="memberCount">0</strong><span>成员</span></div>
+          <div><strong id="postCount">0</strong><span>帖子</span></div>
+          <div><strong id="todayCount">0</strong><span>今日新帖</span></div>
+        </div>
+      </section>
 
-    <section class="composer card" id="feed">
-      <h2>发布动态</h2>
-      <form id="postForm">
-        <input id="authorInput" type="text" maxlength="20" placeholder="你的昵称" required />
-        <input id="titleInput" type="text" maxlength="60" placeholder="标题" required />
-        <textarea id="contentInput" rows="4" maxlength="300" placeholder="分享你的想法、问题或项目进展..." required></textarea>
-        <button type="submit" class="btn-primary">发布帖子</button>
-      </form>
-    </section>
+      <section class="composer card" id="feed">
+        <h2>发布动态</h2>
+        <form id="postForm">
+          <input id="authorInput" type="text" maxlength="20" placeholder="你的昵称" required />
+          <input id="titleInput" type="text" maxlength="60" placeholder="标题" required />
+          <textarea id="contentInput" rows="4" maxlength="300" placeholder="分享你的想法、问题或项目进展..." required></textarea>
+          <button type="submit" class="btn-primary">发布帖子</button>
+        </form>
+      </section>
 
-    <section class="feed card">
-      <div class="feed-header">
-        <h2>社区动态</h2>
-        <select id="sortSelect" aria-label="动态排序">
-          <option value="latest">最新发布</option>
-          <option value="hot">最热互动</option>
-        </select>
-      </div>
-      <div id="postList" class="post-list"></div>
-    </section>
+      <section class="feed card">
+        <div class="feed-header">
+          <h2>社区动态</h2>
+          <select id="sortSelect" aria-label="动态排序">
+            <option value="latest">最新发布</option>
+            <option value="hot">最热互动</option>
+          </select>
+        </div>
+        <div id="postList" class="post-list"></div>
+      </section>
+    </div>
 
     <aside class="sidebar">
       <section class="card" id="topics">
         <h3>热门话题</h3>
         <ul id="topicList" class="topic-list"></ul>
       </section>
+
       <section class="card" id="events">
         <h3>社区活动</h3>
         <ul class="event-list">
