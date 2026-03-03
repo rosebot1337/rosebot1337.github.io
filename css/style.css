@@ -250,6 +250,26 @@ button {
   display: block;
 }
 
+
+.quick-links a {
+  color: var(--accent);
+}
+
+.quick-links p {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+.quick-links code {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.25);
+  color: #d9e6ff;
+  word-break: break-all;
+}
+
 @media (max-width: 980px) {
   .layout {
     grid-template-columns: 1fr;
